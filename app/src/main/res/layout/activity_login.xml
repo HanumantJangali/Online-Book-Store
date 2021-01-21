@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/loginbackground">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/onlinebooks"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/transparent"
+        android:paddingTop="20dp"
+        android:alpha=".861"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/round_butt"
+            android:fontFamily="sans-serif"
+            android:text="Sign In"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/round_textview"
+            android:drawableRight="@drawable/password"
+            android:fontFamily="sans-serif"
+            android:hint="Enter password"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:textColor="#FFFBF6"
+            android:textColorHint="#000"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/lemail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_textview"
+            android:drawableRight="@drawable/email"
+            android:fontFamily="sans-serif"
+            android:hint="Enter your Email"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:textColor="#FFFBF6"
+            android:textColorHint="#000"
+            android:textSize="20dp" />
+
+       <!-- <Spinner
+            android:id="@+id/selectPhase"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="130dp"
+            android:autofillHints="Select Phase"
+            android:background="@drawable/round_butt1"
+            android:contextClickable="true"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textStyle="bold" />-->
+    </RelativeLayout>
+
+</RelativeLayout>

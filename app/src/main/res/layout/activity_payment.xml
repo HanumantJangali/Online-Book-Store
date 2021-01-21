@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF4F4"
+    tools:context=".Payment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/round_textview"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="Select Payment Methods to Pay the Amount"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="90dp"
+        android:text="Your Book Price:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/bookAmount"
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="90dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/creditCard"
+        android:layout_width="160dp"
+        android:layout_height="204dp"
+        app:cardBackgroundColor="#fcfcfc"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="198dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="165dp"
+            android:background="#70A3F1"
+            android:text="Credit Card"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:alpha="1"
+            app:cardBackgroundColor="#fcfcfc">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/creditcardicon" />
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/googlePay"
+        android:layout_width="160dp"
+        android:layout_height="204dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="220dp"
+        app:cardBackgroundColor="#fcfcfc">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="165dp"
+            android:background="#70A3F1"
+            android:text="Google Pay"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:alpha="1"
+            app:cardBackgroundColor="#fcfcfc">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/google_pay_icon" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

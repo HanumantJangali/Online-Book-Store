@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    tools:context=".CreditCard">
+
+    <Button
+        android:id="@+id/creditpayButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_butt2"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="450dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="Pay"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="239dp"
+        android:layout_height="70dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="170dp">
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:hint="Mobile Number"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="181dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="229dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        android:layout_marginTop="130dp">
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:hint="CVV Code"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/cardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:drawableRight="@drawable/creditcard"
+            android:hint="Card Number"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:textColorHint="#040404"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        android:layout_marginTop="130dp">
+
+        <EditText
+            android:id="@+id/expiryDate"
+            android:layout_width="162dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:hint="Expiration Date"
+            android:paddingLeft="10dp"
+            android:textColor="#555"
+            android:inputType="datetime"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="210dp">
+
+        <EditText
+            android:id="@+id/postalCode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/postal"
+            android:drawablePadding="10dp"
+            android:hint="Postal Code"
+            android:textColor="#555"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Book Amount:"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="380dp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="200dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        android:layout_width="136dp"
+        android:layout_height="70dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="290dp">
+
+        <EditText
+            android:id="@+id/countryCode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:hint="Country Code"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#555"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</RelativeLayout>
